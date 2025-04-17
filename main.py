@@ -1,5 +1,7 @@
 import sqlparse
 import pyperclip
+import random
+import sys
 
 
 def format_sql(raw):
@@ -24,7 +26,55 @@ def main():
     # Copy the formatted SQL back to the clipboard
     pyperclip.copy(formatted_sql)
 
-    print("Formatted SQL copied to clipboard.")
+    # Check for -v argument
+    if "view" in sys.argv:
+        print(formatted_sql)
+
+    print(f"{get_random_emoji()} Formatted SQL copied to clipboard.")
+
+
+def get_random_emoji():
+    emoji_list = [
+        "😄",
+        "😂",
+        "😅",
+        "😆",
+        "😉",
+        "😊",
+        "😇",
+        "😍",
+        "😘",
+        "😋",
+        "😎",
+        "😏",
+        "😐",
+        "😑",
+        "😒",
+        "🙄",
+        "🤔",
+        "🤗",
+        "🤩",
+        "🤔",
+        "🤨",
+        "🧐",
+        "🤓",
+        "😕",
+        "🙃",
+        "🤑",
+        "😲",
+        "😳",
+        "🥺",
+        "😱",
+        "🥵",
+        "🥶",
+        "😤",
+        "😠",
+        "😡",
+        "🤬",
+        "🤯",
+        "😳",
+    ]
+    return random.choice(emoji_list)
 
 
 if __name__ == "__main__":
