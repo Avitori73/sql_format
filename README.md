@@ -5,7 +5,7 @@
 1. 克隆本仓库到本地：
 
    ```bash
-   git clone <仓库地址>
+   git clone https://github.com/Avitori73/sql_format
    cd sql_format
    ```
 
