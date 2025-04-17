@@ -1,0 +1,13 @@
+[project]
+name = "sql-format"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyperclip>=1.9.0",
+    "sqlparse>=0.5.3",
+]
+
+[project.scripts]
+fmt = "main:main"
