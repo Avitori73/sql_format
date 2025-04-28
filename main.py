@@ -7,9 +7,9 @@ import sys
 def format_sql(raw):
     formatted_sql = sqlparse.format(
         raw,
-        # reindent=True,  # 重新缩进
-        reindent_aligned=True,  # 对齐缩进
-        keyword_case="lower",  # 关键词大写
+        reindent=True,  # 重新缩进
+        # reindent_aligned=True,  # 对齐缩进
+        keyword_case="upper",  # 关键词大写
         indent_width=4,  # 缩进空格数
         strip_comments=True,  # 删除注释
     )
