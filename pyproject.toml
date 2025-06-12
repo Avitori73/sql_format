@@ -9,5 +9,9 @@ dependencies = [
     "sqlparse>=0.5.3",
 ]
 
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
 [project.scripts]
-fmt = "main:main"
+fmt = "fmt.main:main"
