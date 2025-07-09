@@ -1,7 +1,7 @@
 import sqlparse
 import pyperclip
 import random
-import click
+import rich_click as click
 from rich.console import Console
 from rich.syntax import Syntax
 
